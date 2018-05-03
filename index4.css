@@ -1,0 +1,223 @@
+/* Picture-text config */
+* {
+	box-sizing: border-box;
+}
+body, h1, h2, h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+		}
+body, html {
+	height: 100%;
+	margin: 0;
+}
+p {
+	line-height: 1;
+	font-size: 15px;
+	font-weight: lighter;
+}
+div {
+	display: block;
+		}
+.img, .img2 {
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.img {
+	background-image: url("https://www.w3schools.com/w3images/wedding_couple.jpg");
+}
+.img2 {
+	background-image: url("https://www.w3schools.com/w3images/flowers.jpg");
+}
+/* First picture */
+.grayscale-min {
+	filter: grayscale(60%);
+}
+
+header {
+	display: block;
+}
+.text1{
+	text-align: center;
+	letter-spacing: 6px;
+	color: white;
+	font-size: 30px;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/* Buttom nav */
+.bottom {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+.white {
+	color: black;
+	background-color: #f5f5f0;
+	opacity: 0.6;
+	transition: 0.1s;
+}
+.white:hover {
+	opacity: 1;
+	background-color: white;
+}
+.opacity-min {
+	opacity: 0.75;
+}
+.container {
+	width: 100%;
+	overflow: hidden;
+	padding: 4px 8px;
+}
+.button0-1 {
+	float: left;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	padding: 12px 16px;
+	outline: 0;
+	width: 25%;
+}
+.button0-1:hover {
+	background-color: gray;
+}
+.button0-2 {
+	float: left;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	padding: 12px 16px;
+	outline: 0;
+	width: 25%;
+}
+.button0-2:hover {
+	background-color: black;
+	color: white;
+}
+/* About */
+
+.Pink {
+	background-color: #ffdddd;
+}
+.container3 {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.img3 {
+	border-radius: 4px;
+}
+.container3-1 {
+	max-width: 980px;
+	margin: auto;
+}
+.text2 {
+	color: gray;
+	text-align: center;
+}
+.button1:link, .button1:visited {
+	background-color: black ;
+	color: white ;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 4px;
+	padding: 20px 24px;
+	display: inline block;
+	font-size: 18px;
+}
+.button1:hover, .button1:active {
+	background-color: gray;
+	color: black;
+}
+/* Secondary Picture */
+.text5 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Wedding spot */
+.text-left {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.text-right {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+.line-height {
+	line-height: 1.5;
+}
+.container5 {
+	padding-top: 64px;
+	padding-bottom: 250px;
+}
+/* RSVP 6*/
+.lightpink {
+	background-color: #ffdddd;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.text3 {
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: 4px;
+}
+.text6 {
+	text-align: center; 
+	letter-spacing: 4px; 
+	font-size: 16px
+}
+button, .button4 {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 18px 60px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 24px;
+}
+button, .button4:hover {
+	opacity: 1;
+	background-color: gray;
+	color: black;
+}
+/*Footer container*/
+.bgblack {
+	background-color: black;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}  
+.text4 {
+	text-align: center;
+	color: white;
+}
+.w3css:link {
+    color: white;
+	text-decoration: none;
+}
+.w3css:hover {
+	color: green;
+}
+/* Clear-Spot */
+.clearspot {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: white;
+}
