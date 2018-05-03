@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>restaurant</title>
+	<style>
+	 /* Html and css config */
+		* {
+			box-sizing: border-box;
+		}
+		body, html {
+			height: 100%;
+			margin: 0;
+			font-size: 15px;
+			line-height: 1.5;
+		}
+		body {
+			font-family: "Times New Roman", Georgia, Serif;
+			}
+		h1,h2,h3,h4,h5 {
+    		font-family: "Playfair Display";
+    		letter-spacing: 5px;
+    		font-weight: 400;
+		}
+	/* Top button Group not fix */
+		.topbar { 
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+			top: 0;
+			box-shadow: 1px 1px 1px 1px gray;
+		}
+		.colorbar {
+			background-color: white;
+		}
+		.padding {
+			padding: 8px 16px;
+			width: 100%;
+			overflow: hidden;
+		}
+		.f-right {
+			float: right;
+		}
+		.button {
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			float: left;
+			border: none;
+			padding: 8px 10px;
+			outline: 0;
+			letter-spacing: 3px;
+		}
+		.button:hover {
+			background-color: #d7d7c1;
+		}
+	/* First picture not fix */	
+		.convert-img {
+			max-width: 100%;
+			height: auto;
+		}
+		.relative {
+			position: relative;
+		}
+		.absolute {
+			position: absolute;
+			bottom:10px;
+			left: 25px;
+		}
+		.text-1 {
+			font-weight: 400;
+			color: #57585c;
+		}
+	/* First Meniu not fix */
+		img {
+			border-style: none;
+			vertical-align: middle;
+		}
+		.padding-meniu {
+			padding: 12px 24px;
+		}
+		.meniu {
+			padding-top: 64px;
+			padding-bottom: 64px;
+		}
+		.meniu-row {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.meniu-col {
+			float: left;
+			width: 100%;
+		}
+		.page-content {
+			min-width: 980px;
+			margin: auto;
+		}
+		@media (min-width: 601px){
+			.meniu-col.m6{
+				width: 50%;
+			} 
+		}
+		hr {
+			border: 0;
+			border-top: 1px solid black;
+			margin: 20px 0;
+			box-sizing: content-box;
+			height: 0;
+			overflow: visible;
+		}
+	/* Secondary Meniu not fix */
+    /* Contact not fix */
+    /* Form not fix */
+    input[type=text] {
+    	width: 100%;
+    	padding: 12px 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+    	border: none;
+    	border-bottom: 1px solid black;
+    }
+    input[type=number] {
+    	width: 100%;
+    	padding: 12px 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+    	border: none;
+    	border-bottom: 1px solid black
+    }
+    input[type=datetime-local] {
+    	width: 100%;
+    	padding: 12px 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+    	border: none;
+    	border-bottom: 1px solid black
+    }
+    button {
+    	padding: 10px 16px;
+    	border: none;
+    	margin: 8px 0;
+    }
+    button:hover {
+    	background-color: gray;
+    }
+    /* Footer not fix */
+    .bottom {
+    	background-color: #f1f1f1;
+    	text-align: center;
+    }
+    .w3css {
+    	color: black;
+    }
+    .w3css:hover {
+    	color: green;
+    }
+	</style>
+</head>
+<body>
+	<!-- Buttun top -->
+	<div class="topbar">
+	<div class="colorbar padding ">
+		<a href="Gourment au Catering" class="button">Gourment au Catering</a>
+	<div class="f-right">
+		<a href="about" class="button">About</a>
+		<a href="menu" class="button">Menu</a>
+		<a href="contact" class="button">Contact</a>
+	</div>
+	</div>
+	</div>
+	<!-- First Picture -->
+   <header class="relative">
+   	<img class="convert-img" src="https://www.w3schools.com/w3images/hamburger.jpg" width="1600px" height="800px">
+   	 <div class="absolute">
+   	 	<h1 class="text-1">Le Catering</h1>
+   	 </div>
+   </header>
+   <!-- Page content -->
+ <div class="page-content" style="max-width: 1100px">
+        <!-- Meniu -->
+   <div class="meniu meniu-row">
+     <div class="padding-meniu meniu-col m6">
+   	 	<img class="convert-img" src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="table settings" width="600px" height="750px">
+   	 </div>
+   	   <div class="meniu-col padding-meniu m6">
+   	 		<h1 style="text-align: center;">About Catering</h1>
+   	 		<br>
+   	 		<h4 style="text-align: center;">Tradition since 1889</h4>
+   	 		<p style="font-size: 18px;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span style="background-color: #ebebe0;">seasonal</span> ingredients.</p>
+   	 		<span></span>
+   	 		<p style="color: gray; font-size: 18px;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+   </div>
+   <!-- Secondary meniu -->
+  		 <hr>
+  		<div class="meniu meniu-row">
+  			<div class="padding-meniu meniu-col m6">
+  				<h1>Our Menu</h1>
+  				<h2>Bread Basket</h2>
+  				<p>Assortment of fresh baked fruit breads and muffins 5.50$</p>
+  				<h2>Honey Almond Granola with Fruits</h2>
+  				<p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00$</p>
+  				<h2>Belgian Waffle</h2>
+  				<p>Vanilla flavored batter with malted flour 7.50$</p>
+  				<h2>Scrambled eggs</h2>
+  				<p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50$</p>
+  				<h2>Blueberry Pancakes</h2>
+  				<p>With syrup, butter and lots of berries 8.50$</p>
+  			</div>
+  			<div class="padding-meniu meniu-col m6">
+  				<img src="https://www.w3schools.com/w3images/tablesetting.jpg">
+  			</div>
+  		</div>
+  	<!-- Contact -->
+  		  <hr>
+  		     <div class="padding-meniu">
+  		     	<h1>Contact</h1>
+  		     	<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+  		     	<h3>Catering Service, 42nd Living St, 43043 New York, NY</h3>
+  		     	<p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+  	<!-- Form -->	     	
+  		     <form>
+  		     	<input type="Text" name="Fname" placeholder="Name">
+  		     	<input type="number" name="How many people" placeholder="How many people">
+  		     	<input type="datetime-local" name="date" value="2017-11-16T20:00" placeholder="Date and time">
+  		     	<input type="text" name="Message \ Special requirements" placeholder="Message \ Special requirements">
+  		     </form>
+  		     <button>SEND MESSAGE</button>
+  	    </div> 
+ </div>
+ <!-- Footer -->
+ <footer class="bottom padding-meniu">
+ 	<p>Powered by <a href="w3.css" class="w3css">w3.css</a></p>
+ </footer>
+</body>
+</html>
