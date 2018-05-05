@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form2</title>
+<style>
+    body {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    /* Table config */
+    * {
+        box-sizing: border-box;
+    }
+    table ,th ,td {
+        padding: 5px 8px ;
+    }
+    tr, th {
+        text-align: right;
+    }
+    tr, td {
+        text-align: left;
+    }
+    /* Page container */
+    .content {
+        width: 100%;
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+    /* Input config */
+    input[type=text] {
+        width: 100%;
+        font-size: 13px;
+        padding: 2px 5px;      
+    }
+    input[type=tel] {
+        width: 100%;
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+    input[type=email] {
+        width: 100%;
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+    input[type=url] {
+        width: 100%;
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+    input[type=number] {
+        width: 20%;
+
+    }
+    input[type=range] {
+        width: 90%;
+    }
+    input[type=date] {
+        width: 100%;
+    }
+    input[type=time] {
+        width: 100%;
+    }
+    input[type=submit] {
+       width: 80px;
+    }
+    input[type=submit] {
+       border-radius: 10px;
+    }
+    .button {
+        padding: 0 120px 20px 120px;
+    }
+</style>
+</head>
+<body>
+    <div class="content">
+      <form>
+        <table>
+            <tr>
+                <th>Title</th>
+                <td><input type="text" name="Title" placeholder="Select one of enter your own"></td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="Fname" placeholder="John Doe"></td>
+            </tr>
+            <tr>
+                <th>Phone number</th>
+                <td><input type="tel" name="Phone"  placeholder="+1 23456789"></td>
+                <td>(optional)</td>
+            </tr>
+            <tr>
+                <th>Email address</th> 
+                <td><input type="email" name="Email" placeholder="aaa@aaaa"></td>
+            </tr>
+            <tr>
+                <th>Your website</th>
+                <td><input type="url" name="website" placeholder="www.yoursite.com"></td>
+                <td>(optional)</td>
+            </tr>
+            <tr>
+                <th>Nr.of items to order</th>
+                <td><input type="number" name="number" placeholder="6" min="0" max="10"> (1-10)</td>
+
+            </tr>
+            <tr>
+                <th>Length</th>
+                <td><input type="range" name="Length" id="lengthinput" value="1" min="-5" max="5" oninput="lengthoutput.value = lengthinput.value"><output name="Length" id="lengthoutput">1</output></td>
+                <td>(in 10cm increments)</td>
+            </tr>
+            <tr>
+                <th>Delivery date</th>
+                <td><input type="date" name="data"></td>
+                <td>(minimum 16 December 2010)</td>
+            </tr>
+            <tr>
+                <th>Time of delivery</th>
+                <td><input type="time" name="time"></td>
+                <td>(in 30 min increments)</td>
+            </tr>
+            <tr>
+                <th>Color of the item</th>
+                <td><input type="color" name="color" value="#ff0000"> (default red)</td>
+            </tr>
+        </table>
+                <p class="button"><input type="submit" name="submit" value="Submit"></p>
+        </form>
+    </div>
+</body>
+</html>
