@@ -4,10 +4,6 @@
 <meta charset="UTF-8">
 <title>form2</title>
 <style>
-    body {
-        margin-left: 30%;
-        margin-right: 30%;
-    }
     /* Table config */
     * {
         box-sizing: border-box;
@@ -22,10 +18,24 @@
         text-align: left;
     }
     /* Page container */
-    .content {
+    .page-container {
         width: 100%;
+        position: relative;
+    }
+    .conteiner {
         background-color: #f1f1f1;
         border-radius: 4px;
+        width: 600px;  
+        position: absolute;
+        left: 30%;
+    }
+    .conteiner-2 {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+        width: 600px;  
+        position: absolute;
+        left: 30%;
+        bottom: 34%;
     }
     /* Input config */
     input[type=text] {
@@ -50,7 +60,6 @@
     }
     input[type=number] {
         width: 20%;
-
     }
     input[type=range] {
         width: 90%;
@@ -65,18 +74,16 @@
        width: 80px;
     }
     input[type=submit] {
-       border-radius: 10px;
+       cursor: pointer;
     }
     .button {
         padding: 0 120px 20px 120px;
     }
-    input[type=search] {
-        border-radius: 10px;
-    }
 </style>
 </head>
 <body>
-    <div class="content">
+    <div class="page-conteiner">
+    <div class="conteiner">
       <form>
         <table>
             <tr>
@@ -94,7 +101,7 @@
             </tr>
             <tr>
                 <th>Email address</th> 
-                <td><input type="email" name="Email" placeholder="aaa@aaaa"></td>
+                <td><input type="email" name="Email" placeholder="name@gmail.com"></td>
             </tr>
             <tr>
                 <th>Your website</th>
@@ -104,21 +111,20 @@
             <tr>
                 <th>Nr.of items to order</th>
                 <td><input type="number" name="number" placeholder="6" min="0" max="10"> (1-10)</td>
-
             </tr>
             <tr>
                 <th>Length</th>
-                <td><input type="range" name="Length" id="lengthinput" value="1" min="-5" max="5" oninput="lengthoutput.value = lengthinput.value"><output name="Length" id="lengthoutput">1</output></td>
+                <td><input type="range" name="Length" id="lengthinput" value="1" min="-5" max="5" oninput="lengthoutput.value = lengthinput.value" style="cursor: pointer;"><output name="Length" id="lengthoutput">1</output></td>
                 <td>(in 10cm increments)</td>
             </tr>
             <tr>
                 <th>Delivery date</th>
-                <td><input type="date" name="data"></td>
+                <td><input type="date" name="data" value="2017-12-12"></td>
                 <td>(minimum 16 December 2010)</td>
             </tr>
             <tr>
                 <th>Time of delivery</th>
-                <td><input type="time" name="time"></td>
+                <td><input type="time" name="time" value="13:00"></td>
                 <td>(in 30 min increments)</td>
             </tr>
             <tr>
@@ -127,8 +133,13 @@
             </tr>
         </table>
                 <p class="button"><input type="submit" name="submit" value="Submit"></p>
-                <p class="button"><strong> Search </strong><input type="search" name="search"> <button>Go</button></p>
         </form>
     </div>
+      <div class="conteiner-2">
+        <form>
+            <p class="button"><strong> Search </strong><input type="search" name="search"> <button style="padding: 2px; cursor: pointer">Go</button></p>
+        </form>
+    </div>
+ </div>
 </body>
 </html>
