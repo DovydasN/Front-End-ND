@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <title>Pizza</title>
+        <style>
+            /* Page config */
+            * {
+                box-sizing: border-box;
+            }
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+            body, h1, h2, h3, h4 {
+                font-family: "Amatic SC", sans-serif;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            /* Button group top */
+            #topbar {
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+            }
+            .colorbar {
+                background-color: rgb(0, 0, 0, 0.6);
+            }
+            .colorbar:hover {
+                background-color: black;
+            }
+            .wide {
+                width: 100%;
+                overflow: hidden;
+            }
+            .button {
+                color: white ;
+                float: left;
+                text-decoration: none;
+                border: none;
+                outline: 0;
+                padding: 11px 16px; 
+                font-size: 24px;
+            }
+            .button:hover {
+                background-color: gray;
+                color: black;
+            }
+            /* First page */
+            .Bgimg {
+                background-image: url(file:///C:/Users/Dovydas/Desktop/Study/projects/Front-End-ND/Pizza/img/pizza.jpg);
+                min-height: 90%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: grayscale(50%);
+            }
+            .relative {
+                position: relative;
+            }
+            .absolute {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .bottom_absolute_text {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            #button_m {
+                color: white;
+                text-decoration: none;
+                outline: 0;
+                border: none;
+                background-color: black;
+                padding: 10px 20px;
+                font-size: 36px;
+                font-family: "Amatic SC", sans-serif;
+                cursor: pointer;
+            }
+            #button_m:hover {
+                color: black;
+                background-color: gray;
+            }
+            .button_padding {
+                padding: 8px 16px;
+            }
+            .button_box {
+                background-color: black ;
+                color: white ;
+                font-size: 24px;
+                padding: 4px 8px;
+            }
+            .first_text {
+                font-size: 100px;
+                color: white;
+            }
+            /* List meniu */
+            .list_container {
+                background-color: black;
+            }
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+                border-top: none;
+                background: white;
+            }
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: black;
+            }
+            .tab button {
+                width: 33.3%;
+                background-color: black;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                font-size: 36px;
+                color: white;
+                font-family: "Amatic SC", sans-serif;
+            }
+            .tab button:hover {
+                background-color:#f44336;
+            }
+            .tab button.active {
+                background-color: #f44336;
+            }
+            .meniu_text {
+                font-size: 36px;
+                font-weight: bold;
+            }
+            .meniu_p {
+                font-size: 34px;
+                color: #ccc;
+            }
+            .text_paint_box {
+                padding: 4px 6px;
+                background-color: gray;
+                float: right;
+                color: white;
+                border-radius: 4px;
+                font-weight: 400;
+            }
+            #text_paint_red {
+                padding: 4px 6px;
+                background-color: #f44336;
+                border-radius: 4px;
+                color: white;
+            }
+            .text_paint_gray {
+                padding: 4px 6px;
+                background-color: gray;
+                border-radius: 4px;
+                font-weight: 400;
+            }
+            hr {
+                border: 0.5px solid #ccc;
+            }
+            /* About page */
+            .about_page {
+                background-color: #f44336;
+                filter: grayscale(70%);
+            }
+            .text_content {
+                text-align: center;
+                color: white;
+                font-size: 64px;
+            }
+            .p_text {
+                color: white;
+                font-size: 24px;
+            }
+            #center_img {
+                margin-top: 16px;
+                margin-bottom: 16px; 
+            }
+            .object_center {
+                max-width: 980px;
+                margin: auto;
+            }
+
+            #img_center {
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+            #chef_radius {
+                border-radius: 50%;
+                float: right;
+            }
+            #chef_text {
+                color: white;
+                font-size: 24px;
+            }
+            .float_left {
+                float: left;
+                color: white;
+                width: 50%;
+            }
+            .row {
+                padding: 54px 16px;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .bottom-margin {
+                margin-top: 20px;
+            }
+            /* Contact */
+            .contact_page {
+                background-color: #607d8b;
+                filter: grayscale(70%);
+                padding-bottom: 100px;
+                padding-top: 20px;
+            }
+            input[type=text] {
+                width: 100%;
+                padding: 12px 24px 12px 8px;
+                margin: 8px 0 ;
+                font-family: "Amatic SC", sans-serif;
+                font-size: 24px;
+            }
+            input[type=datetime-local] {
+                width: 100%;
+                padding: 12px 24px 12px 8px;
+                margin: 8px 0 ;
+                font-family: "Amatic SC", sans-serif;
+                font-size: 24px;
+            }
+            .button_send {
+                width: 100%;
+                padding: 8px 20px;
+                margin: 8px 0;
+                font-family: "Amatic SC", sans-serif;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .button_send:hover {
+                background-color: #e1e1d0;
+            }
+            /* Footer */
+            #footer_container{
+                background-color: black;
+                padding: 52px 0;
+            }
+            @media only screen and (max-width: 320px) {
+                #topbar {
+                    width: 100%;
+                    display: none;
+                    }          
+                .first_text {
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+                .absolute {
+                    width: 100%;
+                }
+               .float-right {
+                   width: 25%;
+                   float: left;
+                }
+               .contact_page {
+                   padding: 20px 16px 80px 16px;
+                }
+            }
+            @media only screen and (min-width: 320px) {
+                #topbar {
+                    width: 100%;
+                    display: none;
+                    }          
+                .first_text {
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+                .absolute {
+                    width: 100%;
+                }
+               .float-right {
+                   width: 25%;
+                   float: left;
+                }
+               .contact_page {
+                   padding: 20px 16px 80px 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- First Picture-->
+        <header class="Bgimg relative" id="home">
+                <div class="bottom_absolute_text button_padding">
+                        <span class="button_box">Open from 10am to 12pm</span>
+                    </div>
+                    <div class="absolute">
+                        <span class="first_text">Thin</span>
+                        <br>
+                        <span class="first_text">CRUST PIZZA</span>
+                        <br>
+                        <button id="button_m">Let me see the menu</button>
+                    </div>
+          </header>
+        <!-- Button group -->
+        <div id="topbar">
+            <div class="colorbar wide">
+                    <a href="#" class="button">HOME</a>
+                    <a href="#meniu" class="button">MENIU</a>
+                    <a href="#about" class="button">ABOUT</a>
+                    <a href="#contact"class="button">CONTACT</a>
+            </div>
+        </div>
+        <!-- List meniu -->
+        <div class="list_container row" id="meniu">
+                <p><h1 class="text_content">THE MENU</h1></p>
+            <div class="tab object_center">
+              <button class="tablinks" onclick="openMenu(event, 'Pizza')" id="defaultOpen">Pizza</button>
+              <button class="tablinks" onclick="openMenu(event, 'Salad')">Salads</button>
+              <button class="tablinks" onclick="openMenu(event, 'Starter')">Starter</button>
+            </div>
+            <div id="Pizza" class="tabcontent object_center">
+                <h1 class="meniu_text">Margarita<span class="text_paint_box">$12.50</span></h1>
+                <p class="meniu_p">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                <hr>
+                <h1 class="meniu_text">Formaggio<span class="text_paint_box">$15.50</span></h1>
+                <p class="meniu_p">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+                <h1 class="meniu_text">Chicken<span class="text_paint_box">$17.00</span></h1>
+                <p class="meniu_p">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+                <h1 class="meniu_text">Pineapple'o'clock<span class="text_paint_box">$16.50</span></h1>
+                <p class="meniu_p">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+                <h1 class="meniu_text">Meat Town <span id="text_paint_red">Hot!</span><span class="text_paint_box">$20.00</span></h1>
+                <p class="meniu_p">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+                <h1 class="meniu_text">Parma <span class="text_paint_gray">New</span><span class="text_paint_box">$21.50</span></h1>
+                <p class="meniu_p">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+            <div id="Salad" class="tabcontent object_center">
+                <h1 class="meniu_text">Lasagna <span class="text_paint_gray">Popular</span><span class="text_paint_box">$13.50</span></h1>
+                <p class="meniu_p">Special sauce, mozzarella, parmesan, ground beef</p>
+                <hr>
+                <h1 class="meniu_text">Ravioli<span class="text_paint_box">$14.50</span></h1>
+                <p class="meniu_p">Ravioli filled with cheese</p>
+                <hr>
+                <h1 class="meniu_text">Spaghetti Classica<span class="text_paint_box">$11.00</span></h1>
+                <p class="meniu_p">Fresh tomatoes, onions, ground beef</p>
+                <hr>
+                <h1 class="meniu_text">Seafood pasta<span class="text_paint_box">$25.50</span></h1>
+                <p class="meniu_p">Salmon, shrimp, lobster, garlic</p>
+            </div>
+            <div id="Starter" class="tabcontent object_center">
+                <h1 class="meniu_text">Today's Soup <span class="text_paint_gray">Seasonal</span><span class="text_paint_box">$5.50</span></h1>
+                <p class="meniu_p">Ask the waiter</p>
+                <hr>
+                <h1 class="meniu_text">Bruschetta<span class="text_paint_box">$8.50</span></h1>
+                <p class="meniu_p">Bread with pesto, tomatoes, onion, garlic</p>
+                <hr>
+                <h1 class="meniu_text">Garlic bread<span class="text_paint_box">$9.50</span></h1>
+                <p class="meniu_p">Grilled ciabatta, garlic butter, onions</p>
+                <hr>
+                <h1 class="meniu_text">Tomozzarella<span class="text_paint_box">$10.50</span></h1>
+                <p class="meniu_p">Tomatoes and mozzarella</p>
+            </div>
+            <script>
+                function openMenu(evt, FoodName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(FoodName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    }
+                    document.getElementById("defaultOpen").click();
+                </script>
+        </div>
+    
+        <!-- About page-->
+        <div class="about_page row" id="about">
+                <div class="object_center">
+                    <h1 class="text_content">About</h1>
+                    <p class="p_text">The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="object_center">
+                  <div id="chef_text">
+                      <p><strong>The Chef?</strong> Mr. Italiano himself <img id="chef_radius" src="file:///C:/Users/Dovydas/Desktop/Study/projects/Front-End-ND/Pizza/img/chef.jpg" alt="chef" width="150px" height="100px"></p>
+                      <p>We are proud of our interiors.</p>
+                  </div>
+            <div id="center_img">
+                <img id="img_center" src="file:///C:/Users/Dovydas/Desktop/Study/projects/Front-End-ND/Pizza/img/rest.jpg" alt="onepage restaurant" style="width: 100%">
+                <h1 style="font-size: 36px; color: white;"><strong>Opening Hours</strong></h1>
+            </div>
+             <div class="float_left">
+                    <h2>Mon & Tue CLOSED</h2>
+                    <span></span>
+                    <h2>Wednesday 10.00 - 24.00</h2>
+                    <span></span>
+                    <h2>Thursday 10:00 - 24:00</h2>
+                </div>
+                <div class="float_left">
+                    <h2>Friday 10:00 - 12:00</h2>
+                    <span></span>
+                    <h2>Saturday 10:00 - 23:00</h2>
+                    <span></span>
+                    <h2>Sunday Closed</h2>
+                </div>
+            </div>
+        </div>
+    <!-- Google map-->
+    <div id="map" style="width: 100%; height:400px; overflow: hidden; filter: grayscale(100%);"></div>
+    <script>
+           function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTjbYq1-ZEszWcwsnYOI1tC0iU1Wiy1M4&callback=myMap"></script>
+    <!-- Contact -->
+        <div class="contact_page" id="contact">
+            <div class="object_center">
+                <h1 class="text_content">Contact</h1>
+                <p class="p_text">Find us at some address at some place or call us at 05050515-122330</p>
+                <p class="p_text"><span style="background-color: black; color: white; padding: 4px 6px;">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <h1 style="color: white;"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</h1>
+            </div>
+            <div class="object_center">
+                <form>
+                    <p style="margin: 8px 0"><input type="text" name="Fname" placeholder="Name" required="optional"></p>
+                    <p style="margin: 8px 0"><input type="text" name="How many people" placeholder="How many People"></p>
+                    <p style="margin: 8px 0"><input type="datetime-local" name="date" value="2017-11-16T20:00" placeholder="data and time"></p>
+                    <p style="margin: 8px 0"><input type="text" name="Message\special requiremnts" placeholder="Message\special requiremnts"></p>
+                    <button class="button_send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    <!-- Footer -->
+        <footer id="footer_container">
+            <p style="color: white; font-size: 36px; text-align: center;">Powered by <a style="color:white;" href="#" name="w3.css" title="w3.css">w3.css</a></p>
+        </footer>
+    </body>
+</html>
