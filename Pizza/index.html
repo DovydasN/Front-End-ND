@@ -253,7 +253,7 @@
                 background-color: black;
                 padding: 52px 0;
             }
-            @media only screen and (max-width: 320px) {
+            @media only screen and (min-width: 320px) and (max-width: 600px) {
                 #topbar {
                     width: 100%;
                     display: none;
@@ -270,27 +270,12 @@
                    float: left;
                 }
                .contact_page {
-                   padding: 20px 16px 80px 16px;
+                   padding: 20px 16px 100px 16px;
                 }
             }
-            @media only screen and (min-width: 320px) {
-                #topbar {
-                    width: 100%;
-                    display: none;
-                    }          
-                .first_text {
-                    font-size: 60px;
-                    font-weight: bold;
-                }
-                .absolute {
-                    width: 100%;
-                }
-               .float-right {
-                   width: 25%;
-                   float: left;
-                }
-               .contact_page {
-                   padding: 20px 16px 80px 16px;
+            @media only screen and (min-width: 768px) and (max-width: 768px) {
+                .contact_page {
+                    padding: 20px 16px 100px 16px;
                 }
             }
         </style>
