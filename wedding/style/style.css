@@ -24,24 +24,27 @@ div {
 	background-size: cover;
 }
 .img {
-	background-image: url("https://www.w3schools.com/w3images/wedding_couple.jpg");
+	background-image: url("../img/wedd.jpg");
 }
 .img2 {
-	background-image: url("https://www.w3schools.com/w3images/flowers.jpg");
+	background-image: url("../img/flow.jpg");
 }
 /* First picture */
-.grayscale-min {
-	filter: grayscale(60%);
+.grayscale {
+	filter: grayscale(50%);
 }
 
 header {
 	display: block;
 }
-.text1{
+.text_content {
 	text-align: center;
 	letter-spacing: 6px;
 	color: white;
 	font-size: 30px;
+}
+#text_size {
+	font-size: 28px;
 }
 .relative {
 	position: relative;
@@ -52,171 +55,155 @@ header {
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-/* Buttom nav */
-.bottom {
-	bottom: 0;
+/* Buttom group nav */
+nav {
 	position: fixed;
-	width: 100%;
+	bottom: 0;
+	left: 0;
 	z-index: 1;
+	width: 100%;
 }
-.white {
-	color: black;
-	background-color: #f5f5f0;
-	opacity: 0.6;
-	transition: 0.1s;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	background-color: rgb(242, 242, 242, 0.6)
 }
-.white:hover {
-	opacity: 1;
+ul:hover {
 	background-color: white;
 }
-.opacity-min {
-	opacity: 0.75;
-}
-.container {
-	width: 100%;
-	overflow: hidden;
-	padding: 4px 8px;
-}
-.button0-1 {
+li {
 	float: left;
-	color: black;
-	text-align: center;
-	text-decoration: none;
-	border: none;
-	padding: 12px 16px;
-	outline: 0;
 	width: 25%;
 }
-.button0-1:hover {
-	background-color: gray;
-}
-.button0-2 {
-	float: left;
-	color: black;
-	text-align: center;
+li a {
 	text-decoration: none;
-	border: none;
-	padding: 12px 16px;
 	outline: 0;
-	width: 25%;
+	text-align: center;
+	display: block;
+	padding: 10px 14px;
+	margin: 6px 6px;
+	color: black;
 }
-.button0-2:hover {
+li a:hover {
+	background-color: #ccc;
+}
+#black_table:hover {
 	background-color: black;
 	color: white;
 }
 /* About */
 
-.Pink {
+.pink_bgc {
 	background-color: #ffdddd;
 }
-.container3 {
+.about_container {
 	padding-top: 64px;
 	padding-bottom: 64px;
 }
-.img3 {
+.img_raund {
 	border-radius: 4px;
 }
-.container3-1 {
+#container_width {
 	max-width: 980px;
 	margin: auto;
 }
-.text2 {
+#text_title {
 	color: gray;
 	text-align: center;
 }
-.button1:link, .button1:visited {
+#content_p {
+	line-height: 2;
+	font-style: italic;
+	text-align: justify;
+}
+#button_wedding {
 	background-color: black ;
 	color: white ;
 	text-decoration: none;
 	text-align: center;
 	border-radius: 4px;
 	padding: 20px 24px;
-	display: inline block;
 	font-size: 18px;
 }
-.button1:hover, .button1:active {
+#button_wedding:hover {
 	background-color: gray;
 	color: black;
 }
 /* Secondary Picture */
-.text5 {
+.text_relative {
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
 /* Wedding spot */
-.text-left {
+.text_left {
 	float: left;
 	width: 50%;
 	text-align: center;
 }
-.text-right {
-	float: right;
-	width: 50%;
-	text-align: center;
+#line_height {
+	line-height: 1.8;
 }
-.line-height {
-	line-height: 1.5;
-}
-.container5 {
+.container_padding {
 	padding-top: 64px;
 	padding-bottom: 250px;
 }
-/* RSVP 6*/
+/* RSVP */
 .lightpink {
 	background-color: #ffdddd;
 	padding-top: 64px;
 	padding-bottom: 64px;
 }
-.text3 {
+#rsvp_title {
 	font-size: 36px;
 	text-align: center;
 	letter-spacing: 4px;
 }
-.text6 {
+#rsvp_content {
 	text-align: center; 
 	letter-spacing: 4px; 
-	font-size: 16px
+	font-size: 18px
 }
-button, .button4 {
-	background-color: red;
+#button_box {
+	text-align: center;
+}
+button, #button_rsvp {
+	background-color: #f44336;
 	color: white;
 	border: none;
 	padding: 18px 60px;
 	margin: 4px 2px;
-	opacity: 0.6;
-	transition: 0.3s;
-	display: inline-block;
 	cursor: pointer;
 	text-decoration: none;
 	border-radius: 4px;
 	font-size: 24px;
 }
-button, .button4:hover {
-	opacity: 1;
-	background-color: gray;
+#button_rsvp:hover {
+	background-color: #ccc;
 	color: black;
 }
 /*Footer container*/
-.bgblack {
+#footer_container {
 	background-color: black;
 	padding-top: 24px;
 	padding-bottom: 24px;
 }  
-.text4 {
+#footer_text {
 	text-align: center;
 	color: white;
 }
-.w3css:link {
+#w3css:link {
     color: white;
 	text-decoration: none;
 }
-.w3css:hover {
+#w3css:hover {
 	color: green;
 }
 /* Clear-Spot */
-.clearspot {
+#clearspot {
 	padding-top: 24px;
 	padding-bottom: 24px;
 	background-color: white;
