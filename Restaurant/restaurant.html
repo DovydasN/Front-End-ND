@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>restaurant</title>
+	<style>
+	 /* Html and css config */
+		* {
+			box-sizing: border-box;
+		}
+		body, html {
+			height: 100%;
+			margin: 0;
+			font-size: 15px;
+			line-height: 1.3;
+		}
+		body {
+			font-family: "Times New Roman", Georgia, Serif;
+			}
+		h1,h2,h3,h4,h5 {
+    		font-family: "Playfair Display";
+    		letter-spacing: 5px;
+    		font-weight: 400;
+		}
+	/* Top button Group */
+		#topbar { 
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+			top: 0;
+			box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.18);
+		}
+		.colorbar {
+			background-color: white;
+		}
+		.top_size {
+			padding: 8px 16px;
+			width: 100%;
+			overflow: hidden;
+		}
+		.f_right {
+			float: right;
+		}
+		.button {
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			float: left;
+			border: none;
+			padding: 8px 16px;
+			outline: 0;
+			letter-spacing: 3.7px;
+
+		}
+		.button:hover {
+			background-color: #f1f1f1;
+		}
+	/* First picture */	
+		.convert_img {
+			max-width: 100%;
+			height: auto;
+		}
+		.relative {
+			position: relative;
+		}
+		.max_width {
+			max-width: 1600px;
+			margin: auto;
+		}
+		#absolute {
+			position: absolute;
+			bottom: 0;
+			left: 25px;
+		}
+		#absolute_text {
+			font-size: 36px;
+			font-weight: 400;
+			color: #57585c;
+		}
+
+	/* Page content */
+		#min_width {
+			min-width: 980px;
+			margin: auto;
+		}
+	/* First Meniu */
+	.convert_img {
+			max-width: 100%;
+			height: auto;
+		}
+		img {
+			border-style: none;
+			vertical-align: middle;
+		}
+		.img_raund {
+			border-radius: 4px;
+			opacity: 0.7
+		}
+		.meniu_padding {
+			padding: 12px 24px;
+		}
+		.meniu {
+			padding-top: 64px;
+			padding-bottom: 64px;
+		}
+		.clearfix {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.meniu_col {
+			float: left;
+			width: 100%;
+		}
+		.meniu_text {
+			text-align: center;
+			font-size: 34px;
+		}
+		#text_content {
+			text-align: center;
+			font-size: 18px;
+		}
+		#text_p {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		#text_gray {
+			color: gray;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		@media (min-width: 601px){
+			.meniu_col.m6{
+				width: 50%;
+			} 
+		}
+		hr {
+			border: 0;
+			border-top: 1px solid #ebebe0;
+			margin: 20px 0;
+			box-sizing: content-box;
+			height: 0;
+			overflow: visible;
+		}
+	/* Secondary meniu */
+		#text_size {
+			font-size: 20px;
+		}
+		#text_color {
+			color: gray;
+		}
+    /* Contact */
+    #contact_padding {
+    	padding: 60px 0 68px 0; 
+    }
+	#text_contact {
+		font-size: 18px;
+		color: #607d8b;
+	}
+    /* Form */
+    input[type=text] {
+    	width: 100%;
+    	padding: 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+    	border: none;
+    	border-bottom: 1px solid #ebebe0;
+    	font-family: "Times New Roman", Georgia, Serif;
+    	font-size: 14px;
+    }
+    input[type=number] {
+    	width: 100%;
+    	padding: 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+    	border: none;
+    	border-bottom: 1px solid #ebebe0;
+    	font-family: "Times New Roman", Georgia, Serif;
+    	font-size: 14px;
+    }
+    input[type=datetime-local] {
+    	width: 100%;
+    	padding: 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+    	border: none;
+    	border-bottom: 1px solid #ebebe0;
+    	font-family: "Times New Roman", Georgia, Serif;
+    	font-size: 14px;
+    }
+    button {
+    	padding: 10px 16px;
+    	border: none;
+    	margin: 8px 0;
+    	background-color: #ebebe0;
+    }
+    button:hover {
+    	background-color: gray;
+    }
+    #button_padding {
+    	padding: 2px 0;
+    }
+    /* Footer */
+    .bottom {
+    	background-color: #f1f1f1;
+    	text-align: center;
+    }
+    .footer_padding {
+    	padding: 34px;
+    }
+    #w3css {
+    	color: black;
+    }
+    #w3css:hover {
+    	color: green;
+    }
+	</style>
+</head>
+<body>
+	<!-- Buttun top -->
+	<div id="topbar">
+	<div class="colorbar top_size">
+		<a href="#Gourment au Catering" class="button">Gourmet au Catering</a>
+	<div class="f_right">
+		<a href="#about" class="button">About</a>
+		<a href="#menu" class="button">Menu</a>
+		<a href="#contact" class="button">Contact</a>
+	</div>
+	</div>
+	</div>
+	<!-- First Picture -->
+   <header class="relative max_width">
+   	<img src="img/hamburger.jpg" alt="hamburger" width="1600px" height="800px">
+   	 <div id="absolute">
+   	 	<h1 id="absolute_text">Le Catering</h1>
+   	 </div>
+   </header>
+   <!-- Page content -->
+ <div id="min_width" style="max-width: 1100px">
+        <!-- Meniu -->
+   <div class="meniu clearfix">
+     <div class="meniu_padding meniu_col m6">
+			<img class="convert_img img_raund" src="img/tablesetting2.jpg" alt="tablesettings2" width="500px" height="750px">
+   	 </div>
+   	   <div class="meniu_col meniu_padding m6">
+   	 		<h1 class="meniu_text">About Catering</h1>
+   	 		<span></span>
+   	 		<h4 id="text_content">Tradition since 1889</h4>
+   	 		<p id="text_p">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span style="background-color: #ebebe0; padding: 5px">seasonal</span> ingredients.</p>
+   	 		<span></span>
+   	 		<p id="text_gray">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+   </div>
+   <!-- Secondary meniu -->
+  		 <hr>
+  		<div class="meniu clearfix">
+  			<div class="meniu_padding meniu_col m6">
+  				<h1 class="meniu_text">Our Menu</h1>
+  				<br>
+  				<h2 id="text_size">Bread Basket</h2>
+  				<p id="text_color">Assortment of fresh baked fruit breads and muffins 5.50$</p>
+  				<br>
+  				<h2 id="text_size">Honey Almond Granola with Fruits</h2>
+  				<p id="text_color">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00$</p>
+  				<br>
+  				<h2 id="text_size">Belgian Waffle</h2>
+  				<p id="text_color">Vanilla flavored batter with malted flour 7.50$</p>
+  				<br>
+  				<h2 id="text_size">Scrambled eggs</h2>
+  				<p id="text_color">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50$</p>
+  				<br>
+  				<h2 id="text_size">Blueberry Pancakes</h2>
+  				<p id="text_color">With syrup, butter and lots of berries 8.50$</p>
+  			</div>
+  			<div class="meniu_padding meniu_col m6">
+  				<img class="img_raund" src="img/tablesetting.jpg" alt="tablesetting">
+  			</div>
+  		</div>
+  	<!-- Contact -->
+  		  <hr>
+  		     <div id="contact_padding">
+  		     	<h1>Contact</h1>
+  		     	<br>
+  		     	<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+  		     	<p id="text_contact"><strong>Catering Service, 42nd Living St, 43043 New York, NY</strong></p>
+  		     	<p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+  	<!-- Form -->	     	
+  		     <form>
+  		     	<input type="Text" name="Fname" placeholder="Name" required="optional">
+  		     	<input type="number" name="How many people" placeholder="How many people" required="optional">
+  		     	<input type="datetime-local" name="date" value="2017-11-16T20:00" placeholder="Date and time">
+				<input type="text" name="Message \ Special requirements" placeholder="Message \ Special requirements" required="optional">
+				<p id="button_padding"><button>SEND MESSAGE</button></p>
+  		     </form>
+  	    </div> 
+ </div>
+ <!-- Footer -->
+ <footer class="bottom footer_padding">
+ 	<p>Powered by <a href="w3.css" id="w3css" title="W3.CSS">w3.css</a></p>
+ </footer>
+</body>
+</html>
