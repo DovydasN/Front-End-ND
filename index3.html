@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test 3</title>
+	<title>Task 3</title>
 	<style>
-		body {
-			margin-left: 30%;
-			margin-right: 30%;
+		* {
+			box-sizing: border-box;
 		}
-		div.container {
+		body {
+			max-width: 700px;
+			margin:25px auto;
+		}
+		.container {
 			width: 100%;
 			border: 1px solid black;
 		}
@@ -20,9 +23,10 @@
 		}
 		nav {
 			float: left;
-			max-width: 160px;
-			margin: 0;
+			width: 25%;
+			margin: auto;
 			padding: 16px;
+			
 		}
 		nav ul {
 			list-style-type: none;
@@ -31,11 +35,16 @@
 		nav ul a {
 			text-decoration: none;
 		}
+		nav ul a:hover {
+			color: red;
+		}
 		article {
-			margin-left: 170px;
+			float: left;
+			width: 75%;
 			border-left: 1px solid black;
 			padding: 16px;
 			overflow: hidden;
+			text-align: justify;
 		}
 	</style>
 </head>
@@ -46,16 +55,14 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#">London</a></li>
-				<li><a href="#">Paris</a></li>
-				<li><a href="#">Tokyo</a></li>
+				<li><a href="#London">London</a></li>
+				<li><a href="#Paris">Paris</a></li>
+				<li><a href="#Tokyo">Tokyo</a></li>
 			</ul>
 		</nav>
 		<article>
 			<h1>Londonas</h1>
-			<p>Beveik prieš du tūkstantmečius (apie 43–50 m.) miestą įkūrė romėnai, valdant imperatoriui Tiberijui Klaudijui Neronui (41–54 m.), ir pavadino jį Londinium. Miestavardžio reikšmė turi kelis aiškinimus; manoma, kad romėnai lotynizavo jau buvusį keltiškąjį vietovės pavadinimą, kildinamą iš asmenvardžio Londinos, turinčio šaknį lond 'laukinis'. Kita teorija šį žodį kildina iš senųjų europiečių kalboje vartoto upėvardžio, kurį vėliau iš jų perėmę keltai. Upėvardžio reikšmė buvusi 'tekanti (plati) upė'.
-
-			Nuo IV a. vidurio Londonas buvo svarbus romėnų Britanijos politinis centras, nuo VII a. pr. anglų karalystės sostinė. Nuo XI a. pabaigos – XII a. pradžios jau žinomas kaip oficialioji Anglijos sostinė, nuo 1707 m. – Didžiosios Britanijos.</p>
+			<p>Welcome to Visit London , your official city guide to London, England. Find things to do in London, days out in London, London attractions and sightseeing, what's on, London events, theatre, tours, restaurants and hotels in London. Plan your trip to London with useful traveller information.</p>
 		</article>
 		<footer>Copyright &copy; W3Schools.com</footer>
 	</div>
