@@ -9,6 +9,8 @@
         box-sizing: border-box;
     }
     body, html {
+        max-width: 700px;
+        margin: 20px auto;
         height: 0;
     }
     table ,th ,td {
@@ -21,24 +23,21 @@
         text-align: left;
     }
     /* Page container */
-    .page-container {
+    #page_container {
         width: 100%;
-        position: relative;
     }
-    .conteiner {
+    #conteiner_table {
         background-color: #f1f1f1;
         border-radius: 4px;
-        width: 600px;  
-        position: absolute;
-        left: 30%;
+        width: 600px;
+        padding-bottom: 2px; 
     }
-    .conteiner-2 {
+    #conteiner_search {
         background-color: #f1f1f1;
         border-radius: 4px;
-        width: 600px;  
-        position: absolute;
-        left: 30%;
-        bottom: 32%;
+        width: 600px; 
+        padding: 10px 0 ; 
+        margin: 20px 0 ;
     }
     /* Input config */
     input[type=text] {
@@ -80,36 +79,34 @@
        cursor: pointer;
     }
     .button {
-        padding: 0 120px 20px 120px;
+        padding: 0 120px 0 120px;
     }
 </style>
 </head>
 <body>
-    <div class="page-conteiner">
-    <div class="conteiner">
+    <div id="page-conteiner">
+    <div id="conteiner_table">
       <form>
         <table>
             <tr>
                 <th>Title</th>
-                <td><input type="text" name="Title" placeholder="Select one of enter your own"></td>
+                <td><input type="text" name="Title" placeholder="Select one of enter your own" required="optional"></td>
             </tr>
             <tr>
                 <th>Name</th>
-                <td><input type="text" name="Fname" placeholder="John Doe"></td>
+                <td><input type="text" name="Fname" placeholder="John Doe" required="optional"></td>
             </tr>
             <tr>
                 <th>Phone number</th>
-                <td><input type="tel" name="Phone"  placeholder="+1 23456789"></td>
-                <td>(optional)</td>
+                <td><input type="tel" name="Phone"  placeholder="+1 23456789" required="optional"></td>
             </tr>
             <tr>
                 <th>Email address</th> 
-                <td><input type="email" name="Email" placeholder="name@gmail.com"></td>
+                <td><input type="email" name="Email" placeholder="name@gmail.com" required="optional"></td>
             </tr>
             <tr>
                 <th>Your website</th>
-                <td><input type="url" name="website" placeholder="www.yoursite.com"></td>
-                <td>(optional)</td>
+                <td><input type="url" name="website" placeholder="www.yoursite.com" required="optional"></td>
             </tr>
             <tr>
                 <th>Nr.of items to order</th>
@@ -122,12 +119,12 @@
             </tr>
             <tr>
                 <th>Delivery date</th>
-                <td><input type="date" name="data" value="2017-12-12"></td>
+                <td><input type="date" name="data" value="2017-12-12" required="optional"></td>
                 <td>(minimum 16 December 2010)</td>
             </tr>
             <tr>
                 <th>Time of delivery</th>
-                <td><input type="time" name="time" value="13:00"></td>
+                <td><input type="time" name="time" value="13:00" required="optional"></td>
                 <td>(in 30 min increments)</td>
             </tr>
             <tr>
@@ -138,7 +135,7 @@
                 <p class="button"><input type="submit" name="submit" value="Submit"></p>
         </form>
     </div>
-      <div class="conteiner-2">
+      <div id="conteiner_search">
         <form>
             <p class="button"><strong> Search </strong><input type="search" name="search"> <button style="padding: 2px; cursor: pointer">Go</button></p>
         </form>
