@@ -7,6 +7,10 @@ body,html {
     margin: 0;
     background-color: #282828;
 }
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 400;
+}
 /* Top table */
 .topcontainer {
     background-color: #2e2e2e;
@@ -32,19 +36,24 @@ body,html {
     color: gray;
     padding: 0 3px;
 }
+.nav li a:hover {
+    color: #f1f1f1;
+}
 .left_float {
     float: left;
-    width: 75%;
+    width: 76.4%;
 }
 .padding_link {
     padding: 0 20px;
 }
 #pipe {
     font-weight: bold;
+    color: gray;
+    padding: 0;
 }
 /* Icon table */
 .color_in {
-    background-color: gray;
+    background-color: #787878;
     color: #ffff;
     padding: 8px;
     border-radius: 50%;
@@ -54,7 +63,7 @@ body,html {
  background-color: blue;
 }
 .color_twitter {
-    background-color: gray;
+    background-color: #787878;
     color: #ffff;
     padding: 8px;
     border-radius: 50%;
@@ -63,7 +72,7 @@ body,html {
     background-color: #0099ff;
 }
 .color_pinterest {
-    background-color: gray;
+    background-color: #787878;
     color: #ffff;
     padding: 8px;
     border-radius: 50%;
@@ -72,13 +81,16 @@ body,html {
     background-color: red;
 }
 .color_google {
-    background-color: red;
+    background-color: #db4a39;
     color: #ffff;
     padding: 8px;
     border-radius: 50%;
 }
+.color_google:hover {
+    background-color: red;
+}
 .color_rss {
-    background-color: gray;
+    background-color: #787878;
     color: #ffff;
     padding: 8px;
     border-radius: 50%;
@@ -88,7 +100,7 @@ body,html {
 }
 .left_icon {
     float: left;
-    width: 25%;
+    width: 23.6%;
 }
 .padding_icon {
     padding: 0 20px;
@@ -96,9 +108,25 @@ body,html {
 span {
     padding-left: 5px;
 }
+/* Minus button*/
+.minus_padding {
+    background-color: #ffff;
+    padding-bottom: 40px;
+}
+.minus_box {
+    background-color: #2e2e2e;
+    color: #ffff;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 /* white container */
 .container {
-    padding-top: 40px;
     padding-bottom: 45px;
     background-color: #ffff;
 }
@@ -159,7 +187,7 @@ input[type=search] {
     border-radius: 5px;
     padding-left: 8px;
 }
-button {
+#search_button {
     background-color: #0099ff;
     color: #ffff;
     width: 68px;
@@ -167,6 +195,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .search_float {
     float: left;
@@ -176,7 +205,7 @@ button {
     padding: 0 20px;
     margin-top: 53px;
 }
-/* Slider image */
+/* Slider image and text */
 .slider_padding {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -204,6 +233,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .float_img {
     float: left;
@@ -256,6 +286,7 @@ button {
 #intro_p {
     font-size: 13px;
     color: #666666;
+    line-height: 1.5;
 }
 .intro_float_left {
     float: left;
@@ -285,12 +316,13 @@ button {
 #contact_button {
     background-color: #0099ff;
     color: #e0e0e0;
-    width: 278px;
-    height: 58px;
+    width: 280px;
+    height: 60px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .shout_text_left {
     float: left;
@@ -311,6 +343,8 @@ button {
 }
 #text_p {
     margin: 9px 0;
+    font-weight: bold;
+    color: #333333;
 }
 /* Footer */
 .footer {
@@ -344,6 +378,8 @@ button {
 }
 #text_footer {
     color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
 }
 #footer_text {
     margin: 0;
@@ -391,11 +427,12 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     margin: 12px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #readmore_footer {
      color: #0099ff;
      text-decoration: none;
-     margin-left: 120px;
+     margin-left: 115px;
 }
 h4 {
     color: white;
