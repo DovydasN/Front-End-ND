@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>form2</title>
+<title>Task-6</title>
 <style>
     /* Table config */
     * {
@@ -78,35 +78,35 @@
     input[type=submit] {
        cursor: pointer;
     }
-    .button {
+    #button {
         padding: 0 120px 0 120px;
     }
 </style>
 </head>
 <body>
-    <div id="page-conteiner">
+    <div id="page_conteiner">
     <div id="conteiner_table">
       <form>
         <table>
             <tr>
                 <th>Title</th>
-                <td><input type="text" name="Title" placeholder="Select one of enter your own" required="optional"></td>
+                <td><input type="text" name="Title" placeholder="Select one of enter your own" required></td>
             </tr>
             <tr>
                 <th>Name</th>
-                <td><input type="text" name="Fname" placeholder="John Doe" required="optional"></td>
+                <td><input type="text" name="Fname" placeholder="John Doe" required=></td>
             </tr>
             <tr>
                 <th>Phone number</th>
-                <td><input type="tel" name="Phone"  placeholder="+1 23456789" required="optional"></td>
+                <td><input type="tel" name="Phone"  placeholder="+1 23456789" required></td>
             </tr>
             <tr>
                 <th>Email address</th> 
-                <td><input type="email" name="Email" placeholder="name@gmail.com" required="optional"></td>
+                <td><input type="email" name="Email" placeholder="name@gmail.com" required></td>
             </tr>
             <tr>
                 <th>Your website</th>
-                <td><input type="url" name="website" placeholder="www.yoursite.com" required="optional"></td>
+                <td><input type="url" name="website" placeholder="www.yoursite.com" required></td>
             </tr>
             <tr>
                 <th>Nr.of items to order</th>
@@ -119,12 +119,12 @@
             </tr>
             <tr>
                 <th>Delivery date</th>
-                <td><input type="date" name="data" value="2017-12-12" required="optional"></td>
+                <td><input type="date" name="data" value="2017-12-12" required></td>
                 <td>(minimum 16 December 2010)</td>
             </tr>
             <tr>
                 <th>Time of delivery</th>
-                <td><input type="time" name="time" value="13:00" required="optional"></td>
+                <td><input type="time" name="time" value="13:00" required=></td>
                 <td>(in 30 min increments)</td>
             </tr>
             <tr>
@@ -132,12 +132,12 @@
                 <td><input type="color" name="color" value="#ff0000"> (default red)</td>
             </tr>
         </table>
-                <p class="button"><input type="submit" name="submit" value="Submit"></p>
+                <p id="button"><input type="submit" name="submit" value="Submit"></p>
         </form>
     </div>
       <div id="conteiner_search">
         <form>
-            <p class="button"><strong> Search </strong><input type="search" name="search"> <button style="padding: 2px; cursor: pointer">Go</button></p>
+            <p id="button"><strong> Search </strong><input type="search" name="search"> <button style="padding: 2px; cursor: pointer">Go</button></p>
         </form>
     </div>
  </div>
