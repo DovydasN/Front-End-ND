@@ -1,0 +1,99 @@
+/* Html and body config */
+body,html {
+    height: 100%;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.max_width {
+    max-width: 960px;
+    margin: auto;
+}
+/* Header */
+.gray_color {
+    background-color: #333333;
+}
+.header_padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.text_gray {
+    color: #c0bab6;
+}
+.line_height {
+    line-height: 0;
+}
+.nav {
+    background-color: #232323;
+    padding: 15px 10px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #c0bab6;
+    padding:0 10px;
+    font-size: 12px;
+}
+/* Content */
+.container_padding {
+    padding-top: 32px;
+}
+.img_container {
+    padding-top: 50px;
+}
+.border_img {
+    border: 1px solid #d6d6d6;
+    padding: 3px;
+}
+.margin_bottom {
+    margin-bottom: 40px;
+}
+.img_margin {
+    margin-bottom: 5px;
+}
+/* Footer */
+.dot_line li {
+    border-bottom: 1px dotted black;
+    padding: 4px 0;
+    font-size: 14px;
+}
+.dot_line li a {
+    color: #666666;
+    text-decoration: none;
+    background: url(../img/orange_file.gif) no-repeat left 10px;
+    padding: 5px 10px 5px 10px;
+}   
+.dot_line {
+    list-style-type: none;
+    padding: 0;
+}
+.here_margin {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.margin_right {
+    margin-right: 20px;
+}
+hr {
+    margin: 25px 0 30px 0;
+}
+.hr_list {
+    margin: 10px 0;
+}
+.copyright_margin {
+    margin: 0;
+}
+.copyright_padding {
+    padding: 20px 0;
+}
+.footer_padding {
+    padding-bottom: 20px;
+}
+/* Media responsive */
+@media (min-width: 576px) { 
+    .col-sm-3 {
+        width: 100%;
+        display: block;
+    }
+ }
+
+
+
