@@ -1,57 +1,22 @@
 /* Html and body config */
+
 body,html {
     height: 100%;
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.max_width {
-    max-width: 960px;
-    margin: auto;
-}
-/* Header */
-.gray_color {
+.color_gray {
     background-color: #333333;
 }
-.header_padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.navbar_color {
+    background-color: #232323;
 }
 .text_gray {
-    color: #c0bab6;
-}
-.line_height {
-    line-height: 0;
-}
-.nav {
-    background-color: #232323;
-    padding: 15px 10px;
-}
-.nav li a {
-    text-decoration: none;
-    color: #c0bab6;
-    padding:0 10px;
-    font-size: 12px;
-}
-/* Content */
-.container_padding {
-    padding-top: 32px;
-}
-.img_container {
-    padding-top: 50px;
-}
-.border_img {
-    border: 1px solid #d6d6d6;
-    padding: 3px;
-}
-.margin_bottom {
-    margin-bottom: 40px;
-}
-.img_margin {
-    margin-bottom: 5px;
+    color: #c0bab6 !important;
 }
 /* Footer */
 .dot_line li {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted gray;
     padding: 4px 0;
     font-size: 14px;
 }
@@ -65,35 +30,44 @@ body,html {
     list-style-type: none;
     padding: 0;
 }
-.here_margin {
-    margin-top: 20px;
-    margin-bottom: 0;
+.text_bottom {
+    text-align: right;
 }
-.margin_right {
-    margin-right: 20px;
+.text_right {
+    text-align: right;
 }
-hr {
-    margin: 25px 0 30px 0;
+.line_height {
+    line-height: 0;
 }
-.hr_list {
-    margin: 10px 0;
+.float_left {
+    float: left;
 }
-.copyright_margin {
-    margin: 0;
-}
-.copyright_padding {
-    padding: 20px 0;
-}
-.footer_padding {
-    padding-bottom: 20px;
-}
-/* Media responsive */
-@media (min-width: 576px) { 
-    .col-sm-3 {
-        width: 100%;
-        display: block;
+/* Responsive */
+@media (max-width: 575.98px) { 
+    .toptext {
+        text-align: center;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .copyright_text {
+        text-align: center !important;
+    }
+    .float_left {
+        float: none;
+        text-align: center;
+        margin-right: 0 !important;
     }
  }
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .toptext {
+        text-align: center;
+    }
+
+  }
+
+
+
 
 
 
