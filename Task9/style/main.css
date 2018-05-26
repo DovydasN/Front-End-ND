@@ -8,11 +8,21 @@ body,html {
 .color_gray {
     background-color: #333333;
 }
+/* Header */
 .navbar_color {
     background-color: #232323;
 }
 .text_gray {
+    color: #c0bab6;
+}
+.line_height {
+    line-height: 0;
+} 
+.navbar-nav li a {
     color: #c0bab6 !important;
+}
+.navbar-nav li a:hover {
+    color: orange !important;
 }
 /* Footer */
 .dot_line li {
@@ -25,23 +35,22 @@ body,html {
     text-decoration: none;
     background: url(../img/orange_file.gif) no-repeat left 10px;
     padding: 5px 10px 5px 10px;
-}   
+} 
+.dot_line li a:hover {
+    color: orange;
+} 
 .dot_line {
     list-style-type: none;
     padding: 0;
 }
-.text_bottom {
-    text-align: right;
-}
-.text_right {
-    text-align: right;
-}
-.line_height {
-    line-height: 0;
-}
 .float_left {
     float: left;
 }
+/* Copyright */
+.text_right {
+    text-align: right;
+}
+
 /* Responsive */
 @media (max-width: 575.98px) { 
     .toptext {
@@ -57,17 +66,43 @@ body,html {
         float: none;
         text-align: center;
         margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+    .img_m {
+        margin-bottom: 20px;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .toptext {
+        text-align: center;
+    }
+    .navbar-nav {
+        display: contents;
+    }
+    .img_m {
+        margin-bottom: 20px;
+    }
+    .copyright_text {
+        text-align: center !important;
     }
  }
  @media (min-width: 768px) and (max-width: 991.98px) { 
     .toptext {
         text-align: center;
     }
-
+    .navbar-nav {
+        display: contents;
+    }
+    .nav-link {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
   }
-
-
-
-
-
-
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+      .nav-link {
+          font-size: 12px;
+      }
+      .nav-item {
+          padding: 0 2px;
+      }
+   }
